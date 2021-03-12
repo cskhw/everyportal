@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "582062853493",
+    "firebase_url": "https://heruri-5ae25.firebaseio.com",
+    "project_id": "heruri-5ae25",
+    "storage_bucket": "heruri-5ae25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582062853493:android:a38e68c9ef74e8da40d73c",
+        "android_client_info": {
+          "package_name": "com.wiserock.heruri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582062853493-lb64udll222jpg7joq3f0nnmeeiorpn5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wiserock.heruri",
+            "certificate_hash": "9f544c100b2572706cba6e85dd86d77ce7f338f6"
+          }
+        },
+        {
+          "client_id": "582062853493-ak82pd4lmtjevsgkr5mmnfmnh80nti2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADMd6PUQGYmzK2kw78oloRECbp9Bz4UNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582062853493-ak82pd4lmtjevsgkr5mmnfmnh80nti2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

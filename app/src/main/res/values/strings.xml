@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Heruri</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="setting">설정</string>
+    <string name="logout">로그아웃</string>
+    <string name="coin">동전 던지기</string>
+    <string name="id">아이디</string>
+    <string name="inputYourPassword">이루리 학번과 비밀번호를 입력해주세요.</string>
+    <string name="Heruri">Heruri</string>
+    <string name="password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="loginDescription">해루리는 참고용 어플입니다. \n누락으로 인한 피해는 책임지지 않습니다. \n이루리도 한번 씩 확인해주세요 ㅠㅠ</string>
+    <string name="bugReport">버그 제보: wiserock027@gmail.com</string>
+    <string name="calendar">calendar</string>
+</resources>

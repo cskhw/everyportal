@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="course"
+            type="com.wiserock.heruri.navigation.course.LectureViewModel" />
+
+        <variable
+            name="pos"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/item_push_text1"
+            android:layout_width="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@{course.pushList[pos].name}"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_push_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginStart="30dp"
+            android:text="@{course.setPushTime(pos)}"
+            app:layout_constraintTop_toBottomOf="@id/item_push_text1" />
+
+        <TextView
+            android:id="@+id/item_push_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:text="@{course.pushList[pos].description}"
+            app:layout_constraintTop_toBottomOf="@id/item_push_text2" />
+
+        <TextView
+            android:id="@+id/item_push_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/lightRed"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="삭제"
+            android:onClick="@{() -> course.deletePush(pos)}"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@id/item_push_text3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/activity_coin_button_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:text="뒤로"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <Button
+        android:id="@+id/activity_coin_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/all_round"
+        android:elevation="10dp"
+        android:text="던질까 말까?"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/activity_coin_text1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="A+의 기운이 담긴 분수대"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="#ff9900"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/activity_coin_button" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintTop_toBottomOf="@id/activity_coin_text1"
+        android:background="@drawable/fountain"
+        app:layout_constraintBottom_toTopOf="@id/activity_coin_button" />
+
+    <ImageView
+        android:id="@+id/activity_coin_coin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@+id/activity_coin_button"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="35dp"
+        android:elevation="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@+id/activity_coin_button"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="35dp"
+        android:elevation="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@+id/activity_coin_button"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="27dp"
+        android:elevation="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@+id/activity_coin_button"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="49dp"
+        android:elevation="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/coin"
+        app:layout_constraintBottom_toTopOf="@+id/activity_coin_button"
+        android:layout_margin="40dp"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/activity_coin_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="02220204147868 국민은행으로 \n동전을 던지세요!!\n당신에게 이루리의 행운이..."
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_coin_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

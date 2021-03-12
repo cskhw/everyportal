@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:context="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="planner"
+            type="com.wiserock.heruri.navigation.planner.PlannerViewModel" />
+
+        <variable
+            name="color"
+            type="String" />
+
+        <variable
+            name="pos"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        context:xmlns="com.wiserock.heruri.navigation.planner.Planner2Fragment">
+
+        <TextView
+            android:id="@+id/item_day_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@{planner.dayArrayList[pos].day.date}"
+            android:onClick="@{() -> planner.onClickDayButton(context, planner.dayArrayList[pos])}"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_plan_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/item_day_day"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
