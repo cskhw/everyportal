@@ -3,9 +3,6 @@
 
     <data>
 
-        <variable
-            name="course"
-            type="com.wiserock.heruri.navigation.course.LectureViewModel" />
 
         <variable
             name="pos"
@@ -15,12 +12,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:background="@color/lightRed"
-        android:onClick="@{() -> course.setOnClickCourseListener(context, course.homeworkList[pos].href)}"
         android:layout_height="wrap_content">
 
         <TextView
             android:textAlignment="center"
-            android:text="@{course.homeworkList[pos].course}"
             android:id="@+id/item_course_text1"
             android:textSize="20sp"
             android:layout_marginStart="30dp"
@@ -35,7 +30,6 @@
             app:layout_constraintTop_toBottomOf="@+id/item_course_text2" />
 
         <TextView
-            android:text="@{course.homeworkList[pos].name}"
             android:id="@+id/item_course_text2"
             android:layout_marginStart="30dp"
             android:layout_width="wrap_content"
@@ -48,7 +42,6 @@
 
 
         <TextView
-            android:text="@{course.homeworkList[pos].deadline}"
             android:id="@+id/item_course_text3"
             android:layout_margin="10dp"
             android:layout_width="wrap_content"

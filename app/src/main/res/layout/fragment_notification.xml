@@ -4,55 +4,25 @@
     <data>
 
         <variable
-            name="home"
-            type="com.wiserock.heruri.navigation.home.HomeViewModel" />
+            name="notification"
+            type="com.swengineering.everyportal.navigation.notifications.NotificationViewModel" />
     </data>
-
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".navigation.home.HomeFragment">
-
-        <TextView
-            android:id="@+id/fragment_home_title"
-            android:text="이루리 알림"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="textStart"
-            android:textSize="30sp"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/fragment_home_tooltip"
-            android:text="아래 네비게이션 아이콘을 누르면 리프레시됩니다."
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:textAlignment="textStart"
-            android:textSize="14sp"
-            app:layout_constraintTop_toBottomOf="@id/fragment_home_title" />
+        tools:context=".navigation.notifications.NotificationFragment">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/fragment_home_recycler"
-            android:paddingBottom="100dp"
+            android:layout_marginTop="100dp"
+            android:id="@+id/fragment_notification_recycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/fragment_home_title"
-            android:layout_marginTop="40dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
-
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingBottom="50dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

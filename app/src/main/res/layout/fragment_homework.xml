@@ -3,9 +3,6 @@
 
     <data>
 
-        <variable
-            name="course"
-            type="com.wiserock.heruri.navigation.course.LectureViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

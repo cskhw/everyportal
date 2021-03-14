@@ -8,19 +8,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.wiserock.heruri.navigation.home.HomeFragment"
+        android:name="com.swengineering.everyportal.navigation.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_lecture"
-        android:name="com.wiserock.heruri.navigation.course.LectureFragment"
+        android:name="com.swengineering.everyportal.navigation.course.LectureFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_lecture" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.wiserock.heruri.navigation.notifications.PushFragment"
+        android:name="com.swengineering.everyportal.navigation.notifications.NotificationFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_push" />
+        tools:layout="@layout/fragment_notification" />
 </navigation>

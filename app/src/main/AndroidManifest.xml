@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.wiserock.heruri">
+    package="com.swengineering.everyportal">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name=".MyFirebaseMessagingService"
+            android:name="com.swengineering.everyportal.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -22,7 +22,7 @@
         </service>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.swengineering.everyportal.MainActivity"
             android:label="𝓗𝓮𝓻𝓾𝓻𝓲">
 
             <intent-filter>
@@ -31,19 +31,17 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".SettingActivity" />
+        <activity android:name="com.swengineering.everyportal.SettingActivity" />
 
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.swengineering.everyportal.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CoinActivity" />
     </application>
 
 </manifest>

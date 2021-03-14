@@ -5,9 +5,6 @@
 
     <data>
 
-        <variable
-            name="calendar"
-            type="com.wiserock.heruri.navigation.planner.PlannerViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
