@@ -51,7 +51,7 @@
         android:layout_marginStart="40dp"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/activity_setting_title"
-        android:text="설정으로 만들게 없어요" />
+        android:text="설정" />
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -61,105 +61,6 @@
         android:background="@color/gray"
         app:layout_constraintTop_toBottomOf="@id/activity_setting_text1" />
 
-    <TextView
-        android:id="@+id/activity_setting_text2"
-        android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:background="?attr/selectableItemBackground"
-        android:textSize="18sp"
-        android:layout_marginStart="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/activity_setting_text1"
-        android:text="엄" />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/activity_setting_text2" />
-
-    <TextView
-        android:id="@+id/activity_setting_text3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:textColor="@color/black"
-        android:background="?attr/selectableItemBackground"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/activity_setting_text2"
-        android:text="준" />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/activity_setting_text3" />
-
-    <TextView
-        android:id="@+id/activity_setting_text4"
-        android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_height="40dp"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_marginStart="40dp"
-        android:background="?attr/selectableItemBackground"
-        app:layout_constraintTop_toBottomOf="@+id/activity_setting_text3"
-        android:text="식" />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/activity_setting_text4" />
-
-    <TextView
-        android:id="@+id/activity_setting_text5"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="?attr/selectableItemBackground"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:layout_marginStart="40dp"
-        app:layout_constraintTop_toBottomOf="@+id/activity_setting_text4"
-        android:text="이 어떻게 사람이름이ㅇ... 읍읍 당신들 누ㄱ.." />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/activity_setting_text5" />
-
-    <TextView
-        android:id="@+id/activity_setting_text6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginTop="20dp"
-        android:background="?attr/selectableItemBackground"
-        android:layout_marginHorizontal="40dp"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/activity_setting_text5"
-        android:text="추후 과제의 및 강의의 남은 기간에 따른 알림 기능을 업데이트 예정입니다. 많은 피드백 부탁드려요!!" />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_marginHorizontal="40dp"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/activity_setting_text6" />
 
     <ImageView
         android:id="@+id/activity_setting_bottom"
@@ -173,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:text="버그 제보: wiserock027@gmail.com, 플레이 스토어\nCopyright © 2020 wiseRock\n"
+        android:text="버그 제보: wiserock027@gmail.com \nCopyright © 2020 wiseRock\n"
         android:textColor="@color/lightGray"
         app:layout_constraintBottom_toBottomOf="@id/activity_setting_bottom" />
 </androidx.constraintlayout.widget.ConstraintLayout>

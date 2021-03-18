@@ -1,6 +1,7 @@
 package com.swengineering.everyportal
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
             onNavigationItemSelectedListener()
         )
         activity_main_bottomNavigation.selectedItemId = R.id.navigation_home
+        activity_main_button_list_setting.setOnClickListener {
+            startActivity(Intent(this, ListSettingActivity::class.java))
+        }
         var dialog: ProgressBar = activity_main_progressBar
         dialog.visibility = View.GONE
         activity_main_button_menu.setOnClickListener(onClickMenuButtonListener())
