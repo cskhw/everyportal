@@ -1,4 +1,4 @@
-package com.swengineering.everyportal.view.adapter
+package com.swengineering.everyportal.view.adapter.viewpagers
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

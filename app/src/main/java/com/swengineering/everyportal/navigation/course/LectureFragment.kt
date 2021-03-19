@@ -8,8 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.swengineering.everyportal.R
 import com.swengineering.everyportal.databinding.FragmentLectureBinding
-import com.swengineering.everyportal.view.adapter.CourseViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_lecture.*
+import com.swengineering.everyportal.view.adapter.viewpagers.CourseViewPagerAdapter
 import kotlinx.android.synthetic.main.fragment_lecture.view.*
 
 class LectureFragment : Fragment() {

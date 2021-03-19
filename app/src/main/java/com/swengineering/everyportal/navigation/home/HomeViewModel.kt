@@ -11,8 +11,11 @@ import org.jsoup.select.Elements
 
 class HomeViewModel : ViewModel() {
     var naverRanking: MutableLiveData<ArrayList<Ranking>> = MutableLiveData()
+    var tab: MutableLiveData<String> = MutableLiveData()
     fun getNaverRankings() {
+        // 코루틴으로 스레드 종류 변경
         GlobalScope.launch(Dispatchers.IO) {
+            // 네이버 랭킹 크롤링
             val doc =
                 Jsoup.connect("https://datalab.naver.com/keyword/realtimeList.naver").get()
             val elements: Elements =
@@ -26,6 +29,7 @@ class HomeViewModel : ViewModel() {
                 rankings.add(ranking)
             }
             launch(Dispatchers.Main) {
+                println("updated naver ranking: $rankings")
                 naverRanking.value = rankings
             }
         }

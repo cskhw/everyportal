@@ -1,3 +1,5 @@
+package com.swengineering.everyportal.view.adapter.recyclers
+
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup

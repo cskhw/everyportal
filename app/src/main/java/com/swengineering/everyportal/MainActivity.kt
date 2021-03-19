@@ -6,17 +6,21 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.swengineering.everyportal.navigation.course.LectureFragment
 import com.swengineering.everyportal.navigation.home.HomeFragment
 import com.swengineering.everyportal.navigation.notifications.NotificationFragment
+import com.swengineering.everyportal.setting.ListSettingActivity
 import com.swengineering.everyportal.utils.AppPreferenceManager
+import com.swengineering.everyportal.viewmodel.MainViewModel
 import com.swengineering.template.model.AppDatabase
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     companion object {
         lateinit var appDatabase: AppDatabase
+        lateinit var mainViewModel: MainViewModel
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         appDatabase = AppDatabase.getInstance(this)
         val preference = AppPreferenceManager
+        mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         activity_main_bottomNavigation.setOnNavigationItemSelectedListener(
             onNavigationItemSelectedListener()
         )

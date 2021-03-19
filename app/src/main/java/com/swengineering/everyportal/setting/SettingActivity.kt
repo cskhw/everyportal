@@ -1,7 +1,8 @@
-package com.swengineering.everyportal
+package com.swengineering.everyportal.setting
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.swengineering.everyportal.R
 import kotlinx.android.synthetic.main.activity_setting.*
 
 class SettingActivity : AppCompatActivity() {

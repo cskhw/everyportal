@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name="com.swengineering.everyportal.MyFirebaseMessagingService"
+            android:name="com.swengineering.everyportal.utils.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -31,7 +31,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name="com.swengineering.everyportal.SettingActivity" />
+        <activity android:name="com.swengineering.everyportal.setting.SettingActivity" />
 
 
         <activity
@@ -42,7 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListSettingActivity" />
+        <activity android:name=".setting.ListSettingActivity" />
     </application>
 
 </manifest>
