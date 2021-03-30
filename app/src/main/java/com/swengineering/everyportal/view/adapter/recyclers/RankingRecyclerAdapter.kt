@@ -41,9 +41,7 @@ class RankingRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val viewHolder = holder as RankingViewHolder
-
         viewHolder.bind(position)
-
     }
 
     override fun getItemCount(): Int = homeViewModel.naverRanking.value?.size ?: 0

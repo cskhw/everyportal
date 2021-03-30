@@ -12,9 +12,6 @@ class HomeViewpagerAdapter(fragmentManager: FragmentManager, life: Lifecycle) :
     override fun getItemCount(): Int = mainViewModel.checksSize.value ?: 0
 
     override fun createFragment(position: Int): Fragment {
-        return when (position) {
-            0 -> RankingFragment()
-            else -> RankingFragment()
-        }
+        return RankingFragment()
     }
 }

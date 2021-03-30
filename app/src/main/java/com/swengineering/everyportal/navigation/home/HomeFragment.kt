@@ -33,18 +33,29 @@ class HomeFragment : Fragment() {
         val binding: FragmentHomeBinding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         val view = binding.root
-        //get naver ranking
-        homeViewModel.getNaverRankings()
 
         //tabs setting
         val tabs: TabLayout = view.findViewById(R.id.fragment_home_tablayout)
         val viewpager: ViewPager2 = view.findViewById(R.id.fragment_home_viewpager)
         viewpager.adapter = HomeViewpagerAdapter(childFragmentManager, lifecycle)
+        // 기기에 데이터 임시 저장
         val preference = AppPreferenceManager
         var rankingString: String? = preference.getString(context, "rankingList")
         println("rankingString: $rankingString")
         var tabTexts: List<String>? = rankingString?.split(",")
         println("@@@@: $tabTexts")
+        tabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+                tabTexts?.get(tab.position)?.let { homeViewModel.getRankings(it) }
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+
+        })
         mainViewModel.checksSize.value = tabTexts?.size ?: 0
         TabLayoutMediator(tabs, viewpager) { tab, position ->
             tab.text = tabTexts?.get(position)
@@ -53,8 +64,9 @@ class HomeFragment : Fragment() {
         mainViewModel.checks.observe(viewLifecycleOwner, Observer {
             rankingString = preference.getString(context, "rankingList")
             tabTexts = rankingString?.split(",")
-            println("!!!! $tabTexts")
             mainViewModel.checksSize.value = tabTexts?.size ?: 0
+            viewpager.adapter = HomeViewpagerAdapter(childFragmentManager, lifecycle)
+            println("!!!! $tabTexts")
             if (rankingString != "" && rankingString != null) {
                 TabLayoutMediator(tabs, viewpager) { tab, position ->
                     tab.text = tabTexts?.get(position)
